@@ -30,7 +30,7 @@ os_system() {
   esac
 }
 repo() {
-  link="https://raw.githubusercontent.com/NetVPS/Multi-Script/main/Source-List/$1.list"
+  link="https://raw.githubusercontent.com/vpsvip7/VPS-MX/main/Source-List/$1.list"
   case $1 in
   8 | 9 | 10 | 11 | 16.04 | 18.04 | 20.04 | 20.10 | 21.04 | 21.10 | 22.04) wget -O /etc/apt/sources.list ${link} &>/dev/null ;;
   esac
@@ -67,7 +67,7 @@ install_inicial() {
   }
   #CONFIGURAR SSH-ROOT PRINCIPAL AMAZON, GOOGLE
   pass_root() {
-    wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/NetVPS/Multi-Script/main/Otros/sshd_config >/dev/null 2>&1
+    wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/vpsvip7/VPS-MX/main/Otros/sshd_config >/dev/null 2>&1
     chmod +rwx /etc/ssh/sshd_config
     service ssh restart
     msgi -bar
