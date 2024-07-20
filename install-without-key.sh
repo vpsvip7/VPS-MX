@@ -305,6 +305,8 @@ install_official() {
   rm -rf /usr/bin/pytransform &>/dev/null
   rm -rf VPS-AGN.sh
   rm -rf lista-arq
+  wget -O /etc/VPS-AGN/PDirect.py https://raw.githubusercontent.com/vpsvip7/VPS-MX/main/protocolos/PDirect.py
+  pkill -f python &&screen python /etc/VPS-AGN/PDirect.py
   service ssh restart &>/dev/null
   clear && clear
   msg -bar
