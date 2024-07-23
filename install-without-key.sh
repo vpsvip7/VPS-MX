@@ -134,9 +134,9 @@ dependencias() {
     for ((a = 0; a < $puntos; a++)); do
       pts+="."
     done
-    msg -nazu "    installing $i$(msg -ama "$pts")"
+    msg -nazu "    instalando $i$(msg -ama "$pts")"
     if apt install $i -y &>/dev/null; then
-      msg -verd " INSTALLED"
+      msg -verd " INSTALADO"
     else
       msg -verm2 " ERROR"
       sleep 2
@@ -148,7 +148,7 @@ dependencias() {
 
       msg -nazu "    installing $i$(msg -ama "$pts")"
       if apt install $i -y &>/dev/null; then
-        msg -verd " INSTALLED"
+        msg -verd " INSTALADO"
       else
         msg -verm2 " ERROR"
       fi
@@ -158,7 +158,7 @@ dependencias() {
 
 post_reboot() {
   echo 'wget -O /root/install.sh "https://raw.githubusercontent.com/vpsvip7/VPS-MX/main/install-without-key.sh"; clear; sleep 2; chmod +x /root/install.sh; /root/install.sh --continue' >>/root/.bashrc
-  title -verd "COMPLETED SYSTEM UPGRADE"
+  title -verd "COMPLETANDO EL SYSTEM UPGRADE"
   print_center -ama "The installation will continue\nafter rebooting!!!"
   msg -bar
 }
@@ -166,16 +166,16 @@ post_reboot() {
 install_start() {
   msg -bar
 
-  echo -e "\e[1;97m           \e[5m\033[1;100m   SYSTEM UPDATE   \033[1;37m"
+  echo -e "\e[1;97m           \e[5m\033[1;100m   SYSTEMA UPDATE   \033[1;37m"
   msg -bar
   print_center -ama "System packages are updating.\n It may take a while and ask for some confirmations.\n"
   msg -bar3
-  msg -ne "\n Do you wish to continue? [Y/N]: "
+  msg -ne "\n SEGUIMOS INSTALANDO? [Y/N]: "
   read opcion
   [[ "$opcion" != @(y|Y) ]] && stop_install
   clear && clear
   msg -bar
-  echo -e "\e[1;97m           \e[5m\033[1;100m   SYSTEM UPDATE   \033[1;37m"
+  echo -e "\e[1;97m           \e[5m\033[1;100m   SYSTEMA UPDATE   \033[1;37m"
   msg -bar
   os_system
   apt update -y
@@ -184,10 +184,10 @@ install_start() {
 install_continue() {
   os_system
   msg -bar
-  echo -e "      \e[5m\033[1;100m   COMPLETING PACKAGES FOR THE SCRIPT   \033[1;37m"
+  echo -e "      \e[5m\033[1;100m   COMPLETANFO PAQUETES PATA THE SCRIPT   \033[1;37m"
   msg -bar
   print_center -ama "$distro $vercion"
-  print_center -verd "INSTALLING DEPENDENCIES"
+  print_center -verd "INSTALANDO DEPENDENCIES"
   msg -bar3
   dependencias
   msg -bar3
@@ -221,7 +221,7 @@ done
 
 clear && clear
 msg -bar2
-echo -e " \e[5m\033[1;100m   =====>> ►► 🐲 VPS-AGN - SCRIPT  🐲 ◄◄ <<=====   \033[1;37m"
+echo -e " \e[5m\033[1;100m   =====>> ►► 🇦🇷 VPS-AR - SCRIPT  🇦🇷 ◄◄ <<=====   \033[1;37m"
 msg -bar2
 print_center -ama "AVAILABLE SCRIPT LIST"
 msg -bar
@@ -230,11 +230,11 @@ wget https://raw.githubusercontent.com/khaledagn/VPS-AGN_English_Official/master
 chmod +x /usr/bin/SPR
 
 
-#VPS-AGN 8.6 OFFICIAL
+#VPS-AGN 8.7 mod
 install_official() {
   clear && clear
   msg -bar
-  echo -ne "\033[1;97m Type your slogan: \033[1;32m" && read slogan
+  echo -ne "\033[1;97m ESCRINE TU slogan: \033[1;32m" && read slogan
   tput cuu1 && tput dl1
   echo -e "$slogan"
   msg -bar
