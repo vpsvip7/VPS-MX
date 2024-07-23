@@ -288,11 +288,11 @@ install_official() {
   echo 'clear' >>.bashrc
   echo 'echo ""' >>.bashrc
   echo 'echo -e "\t\033[91m __      _______   _____              _____ _   _ " ' >>.bashrc
-  echo 'echo -e "\t\033[91m \ \    / /  __ \ / ____|       /\   / ____| \ | | " ' >>.bashrc
-  echo 'echo -e "\t\033[91m  \ \  / /| |__) | (___ ______ /  \ | |  __|  \| |  " ' >>.bashrc
-  echo 'echo -e "\t\033[91m   \ \/ / |  ___/ \___ \______/ /\ \| | |_ |     |  " ' >>.bashrc
-  echo 'echo -e "\t\033[91m    \  /  | |     ____) |    / ____ \ |__| | |\  | " ' >>.bashrc
-  echo 'echo -e "\t\033[91m     \/   |_|    |_____/    /_/    \_\_____|_| \_|" ' >>.bashrc
+  echo 'echo -e "\t\033[91m \ 🇦🇷\    /🇦🇷 / 🇦🇷 __ \ / 🇦🇷____|       /\   / ____| \ | | " ' >>.bashrc
+  echo 'echo -e "\t\033[91m  \🇦🇷 \  /🇦🇷 /|🇦🇷 |__) | (🇦🇷___ ______ /  \ | |  __|  \| |  " ' >>.bashrc
+  echo 'echo -e "\t\033[91m   \ 🇦🇷\/ 🇦🇷/ | 🇦🇷 ___/ \___ \______/ /\ \| | |_ |     |  " ' >>.bashrc
+  echo 'echo -e "\t\033[91m    \ 🇦🇷 🇦🇷/  | 🇦🇷|     ____🇦🇷) |    / ____ \ |__| | |\  | " ' >>.bashrc
+  echo 'echo -e "\t\033[91m     \🇦🇷/   |_|🇦🇷    |_____/    /_/    \_\_____|_| \_|" ' >>.bashrc
   echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/khaledagn/VPS-AGN_English_Official/master/SCRIPT-v8.5x/Version &>/dev/null' >>.bashrc
   echo 'echo "" ' >>.bashrc
   echo 'mess1="$(less /etc/VPS-AGN/message.txt)" ' >>.bashrc
