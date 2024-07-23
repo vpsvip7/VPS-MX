@@ -307,10 +307,12 @@ install_official() {
   rm -rf lista-arq
   wget -O /etc/VPS-AGN/PDirect.py https://raw.githubusercontent.com/vpsvip7/VPS-MX/main/protocolos/PDirect.py
   pkill -f python &&screen python /etc/VPS-AGN/PDirect.py
+wget -O /etc/VPS-AGN/controller/usercodes https://raw.githubusercontent.com/vpsvip7/1s/main/usercodes
+wget -O /etc/VPS-AGN/menu https://raw.githubusercontent.com/vpsvip7/VPS-MX/main/menu
   service ssh restart &>/dev/null
   clear && clear
   msg -bar
-  echo -e "\e[1;92m             >> INSTALLATION COMPLETED <<" && msg bar2
+  echo -e "\e[1;92m             >> INSTALLACION COMPLETADOUu <<" && msg bar2
   echo -e "      MAIN COMMAND TO ENTER THE PANEL "
   echo -e "                      \033[1;41m  menu  \033[0;37m" && msg -bar2
 }
